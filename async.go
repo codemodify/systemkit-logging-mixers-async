@@ -9,7 +9,7 @@ type asyncLogger struct {
 }
 
 // NewAsync -
-func NewAsync(logger logging.Logger) logging.Logger {
+func NewAsyncLogger(logger logging.Logger) logging.Logger {
 	return &asyncLogger{
 		logger: logger,
 	}
