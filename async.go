@@ -5,11 +5,11 @@ import (
 )
 
 type asyncLogger struct {
-	logger logging.Logger
+	logger logging.CoreLogger
 }
 
 // NewAsync -
-func NewAsyncLogger(logger logging.Logger) logging.Logger {
+func NewAsyncLogger(logger logging.CoreLogger) logging.CoreLogger {
 	return &asyncLogger{
 		logger: logger,
 	}
